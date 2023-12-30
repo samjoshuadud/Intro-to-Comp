@@ -48,8 +48,10 @@ body {
 .text-homepage {
     padding-left: 5rem;
     width: 60%;
-    position: relative;
-    top: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
     
 
 }
@@ -87,8 +89,7 @@ body {
 
 .image-homepage img {
     height: 100%;
-    width: 100%;
-
+  
 }
 
 .buttons {
