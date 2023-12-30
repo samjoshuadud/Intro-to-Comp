@@ -41,7 +41,7 @@ body {
 .images,
 .projects {
     width: 100%;
-    height: 1020px;
+    min-height: 100vh;
 
 }
 
