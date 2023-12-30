@@ -1,0 +1,287 @@
+
+* {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    display:none;
+}
+
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+  }
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.site-container {
+    display: flex;
+    flex-direction: column;
+}
+.homepage {
+    background-color: #191D2B;
+    display: flex;
+
+}
+
+.homepage,
+.about,
+.images,
+.projects {
+    width: 100%;
+    height: 1020px;
+
+}
+
+.text-homepage {
+    padding-left: 5rem;
+    width: 60%;
+    position: relative;
+    top: 25%;
+    
+
+}
+
+.text-homepage p {
+    line-height: 2rem;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    animation: 1.5s ease-out 0s 1 slideInLeft;
+}
+.text-homepage h1 {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+.typed {
+    color: #711DB0 !important;
+ 
+}
+
+
+
+.image-homepage img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10%;
+    right: 0;
+    top: 32%;
+    padding-right: 2rem;
+    animation: 1s ease-out 0s 1 slideInRight;
+    
+
+}
+
+@keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+.image-homepage {
+    animation: 1s ease-out 0s 1 Image;
+}
+
+@keyframes Image {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+.btn-about, .btn-images, .btn-projects, .btn-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #454e56;
+    border-radius: 50%;
+    margin: 0.7rem 0;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-up {
+    display:flex;
+    background-color: #454e56;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.up-botton {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 1.5%;
+    animation: Scrolled;
+    animation-timeline: scroll(y);
+}
+
+
+@keyframes Scrolled {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+.btn-about:hover,
+.btn-images:hover,
+.btn-projects:hover,
+.btn-home:hover,
+.btn-up:hover{
+    background-color: #711DB0;
+}
+
+ 
+.images {
+    background-color: #191D2B;
+}
+
+.about {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about * {
+    color: black;
+}
+.about h1 {
+    color: #711DB0;
+    font-size: 96px;
+    font-weight: 800;
+    margin-bottom: 0;
+    animation: 1s ease-out 0s 1 slideInLeft;
+
+    
+}
+
+.about-info-1 h2, .about-info-2 h2{
+    margin-bottom: 20px;
+    
+}
+
+.about-info-1 {
+    animation: 1.5s ease-out 0s 1 slideInLeft;
+}
+
+.about-info-2 {
+    animation: 2s ease-out 0s 1 slideInLeft;
+}
+.about-info-1 *, .about-info-2 * {
+    
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about-info-1 .hr, .about-info-2 .hr2 {
+    width: 904px;
+    height: 4px;
+    background-color: #711DB0;
+    margin-bottom: 0;
+}
+
+.about-info-1 ul li, .about-info-2 ul li {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container-images, .container-images-1 {
+    display: flex;
+    flex-direction: column;
+}
+.container-images h1, .container-images-1 h1 {
+    display: flex;
+    font-size: 96px;
+    justify-content: center;
+}
+
+.container-gallery, .container-gallery-1 {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 67.5%; */
+    justify-content: center;
+    
+    
+    
+    
+}
+.container-gallery img, .container-gallery-1 img{
+    height: 30vh;
+    border-radius: 8%;
+    margin: 1%;
+    object-fit: cover;
+    flex: 0 0 24%;   
+    transition: height 300ms;
+
+    
+    
+}
+
+.container-gallery img:hover, .container-gallery-1 img:hover {
+    height: 40vh;
+    transition: height 300ms;
+   
+    
+}  
+
+/* .main-gallery {
+    display: flex;
+    justify-content: center;
+} */
+
+
+#projectsh1 {
+    color:#711DB0;
+}
+
